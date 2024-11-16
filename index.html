@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lightweight Suplements - Inicio</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="shortcut icon" href="assets/img/icono.jpeg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header class="bg-dark text-white p-3 d-flex align-items-center justify-content-between">
+    <!-- Icono más grande y alineado a la izquierda -->
+    <a href="index.html" class="logo-link">
+      <img src="assets/img/icono.png" alt="Logo" class="header-icon">
+    </a>
+    
+    <!-- Título centrado -->
+    <h1 class="header-title stardos-stencil-bold">Lightweight Suplements</h1>
+  
+    <!-- Menú de Navegación -->
+    <nav class="nav-menu">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-white nav-link-custom" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white nav-link-custom" href="./pages/productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white nav-link-custom" href="./pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+
+
+  <!-- Main Content -->
+  <main>
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos" class="container my-5">
+      <h2 class="text-center mb-4 stardos-stencil-regular">¿Quiénes Somos?</h2>
+      <p class="text-center">En Lightweight Suplements, nos especializamos en ofrecer productos de alta calidad para mejorar tu rendimiento físico y bienestar. Trabajamos con las mejores marcas para ofrecer suplementos diseñados para apoyar a deportistas y entusiastas del fitness en su camino hacia sus objetivos. Ya sea para aumentar masa muscular, mejorar resistencia o optimizar la recuperación, tenemos lo que necesitas. Además, brindamos asesoramiento personalizado para elegir los productos adecuados y promovemos un estilo de vida saludable basado en dedicación y esfuerzo constante. Únete a nuestra comunidad y alcanza tus metas de manera más rápida y eficiente.
+
+      </p>
+    </section>
+
+    <!-- Carrusel de Tipos de Suplementos -->
+    <section id="suplementos" class="container my-5">
+      <h2 class="text-center mb-4">Tipos de Suplementos</h2>
+      <div id="suplementosCarousel" class="carousel slide carousel-custom shadow" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Proteína -->
+          <div class="carousel-item active">
+            <h3 class="carousel-title">Proteína</h3>
+            <img src="assets/img/proteina.jpg" class="d-block w-100 carousel-img" alt="Proteína">
+            <div class="carousel-caption-bottom">
+              <p>Si tu objetivo es mejorar la recuperación muscular después del entrenamiento o aumentar la masa muscular magra, la proteína es esencial para tu nutrición. La proteína de suero (Whey Protein) es una de las fuentes más eficaces de proteína, ya que se digiere rápidamente y es rica en aminoácidos esenciales, lo que la convierte en una opción ideal para la reparación muscular. Consumirla después de tu entrenamiento ayudará a acelerar la recuperación, optimizar el crecimiento muscular y reducir el daño muscular inducido por el ejercicio intenso.</p>
+            </div>
+          </div>
+          <!-- Creatina -->
+          <div class="carousel-item">
+            <h3 class="carousel-title">Creatina</h3>
+            <img src="assets/img/creatina.jpg" class="d-block w-100 carousel-img" alt="Creatina">
+            <div class="carousel-caption-bottom">
+              <p>La creatina es uno de los suplementos más estudiados y efectivos si tu objetivo es aumentar tu fuerza, potencia y rendimiento en entrenamientos de alta intensidad. Actúa incrementando las reservas de fosfato en tus músculos, lo que mejora la producción de energía durante esfuerzos explosivos, como levantamiento de pesas o sprints. Si buscas mejorar tu rendimiento en deportes de resistencia o fuerza, la creatina puede ser un aliado clave, permitiéndote entrenar más duro y con mayor volumen, lo que se traduce en un aumento más rápido de la fuerza y el tamaño muscular.</p>
+            </div>
+          </div>
+          <!-- Energizante -->
+          <div class="carousel-item">
+            <h3 class="carousel-title">Energizante</h3>
+            <img src="assets/img/energizante.jpg" class="d-block w-100 carousel-img" alt="Energizante">
+            <div class="carousel-caption-bottom">
+              <p>Si sientes que tu energía decae durante los entrenamientos intensos o largas jornadas y necesitas un impulso para maximizar tu rendimiento, los energizantes son la solución. Estos suplementos están formulados para mejorar tu concentración, aumentar tu resistencia física y reducir la fatiga, ayudándote a entrenar con mayor intensidad y duración. Contienen ingredientes como cafeína, taurina y L-carnitina que aumentan la energía disponible y la circulación sanguínea, lo que te permite mantener el enfoque y mejorar tu rendimiento en entrenamientos exigentes.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#suplementosCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#suplementosCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+    
+
+    <!-- Sección de Promociones -->
+    <section id="promociones" class="container my-5">
+      <h2 class="text-center mb-4">Promociones</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/img/Suplemento Creatina micronizada star nutricion 300gr.png" class="card-img-top" alt="Oferta 1">
+            <div class="card-body">
+              <h5 class="card-title">Suplemento Creatina micronizada star nutricion 300gr</h5>
+              <p class="card-text">¡Ahorra un 20% al comprar este producto</p>
+              <a href="#" class="btn btn-primary">Ver Oferta</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/img/Proteina Whey Protein Gentech chocolate 500grs.png" class="card-img-top" alt="Oferta 2">
+            <div class="card-body">
+              <h5 class="card-title">Proteina Whey Protein Gentech chocolate 500grs.png</h5>
+              <p class="card-text">¡Prepara tu cuerpo para un entrenamiento intenso!</p>
+              <a href="#" class="btn btn-primary">Ver Oferta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-2">
+    <p>&copy; 2024 Lightweight Suplements</p>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

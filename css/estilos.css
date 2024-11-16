@@ -1,0 +1,203 @@
+/*esto es un comentario
+
+/*
+    se puede hace multi
+    lineas tambien
+*/
+/*
+reglas de css:
+- se puede hacer con selectores
+- se puede hacer con propiedades
+- se puede hacer con valores
+selector{
+    propiedad: valor;   
+}
+tipos de selectores:
+universal: *{ 
+            propiedades:valor;}
+    - selecciona todos los elementos de la pagina
+
+etiqueta: etiqueta{propiedad:valor};
+         - selecciona todos los elementos de la pagina con la etiqueta especificada
+
+clase: .nombreDeLaClase{propiedad:valor;}
+         - selecciona todos los elementos de la pagina con la clase especificada
+
+id:  #nombreId{propiedad:valor;}
+     - selecciona el elemento de la pagina con el id especificado
+
+cascada: 
+- si hay dos selectores con la misma propiedad y valor, el ultimo selector que se encuentra en
+la pagina sera el que se aplique
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+/* General */
+* {
+    font-family: "afacad", sans-serif;
+}
+
+
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+.fuenteNegrita {
+    font-weight: 700;
+}
+
+
+
+
+/* Títulos y cabecera */
+h2 {
+    color: #00aeff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1.color-verde {
+    color: #00aeff;
+}
+
+/* Card */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+/* Navegación */
+.nav-link {
+    color: #fff;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #28a745;
+}
+
+.nav-link-custom {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid #00aeff;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+    background-color: #00aeff;
+    color: #fff;
+}
+
+/* Carrusel */
+.carousel-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00aeff;
+    text-align: center;
+}
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-caption-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Cabecera */
+.header-icon {
+    height: 70px;
+    width: auto;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00aeff;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-menu {
+    flex: 1;
+}
+
+/* Formulario */
+form label, form p, form textarea, form input {
+    color: #fff;
+}
+
+form input, form textarea {
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #fff;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #fff;
+}
+
+button, .btn {
+    background-color: #00aeff;
+    color: white;
+    border: none;
+}
+
+button:hover, .btn:hover {
+    background-color: #00aeff;
+}
+
+/* Quiénes somos */
+#quienes-somos p {
+    font-family: "Arial", sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#quienes-somos h2 {
+    color: #00aeff;
+}
+
+/* Contacto */
+#contacto h3 {
+    color: #00aeff;
+}
+
+/* Responsive para el Carrusel */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .carousel-custom {
+        max-width: 100%;
+    }
+}
+
+
+  
+
